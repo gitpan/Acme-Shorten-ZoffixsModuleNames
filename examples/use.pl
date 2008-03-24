@@ -7,9 +7,9 @@ use lib '../lib';
 
 use Acme::Shorten::ZoffixsModuleNames qw(ABE CPANLTD);
 
-my $baby = ABE->new;
+my $acme_baby_eater = ABE->new;
 
-$baby->eat(2);
+$acme_baby_eater->eat(2);
 
 my $cpan_links_to_docs = CPANLTD->new;
 

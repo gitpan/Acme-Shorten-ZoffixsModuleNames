@@ -3,7 +3,7 @@ package Acme::Shorten::ZoffixsModuleNames;
 use warnings;
 use strict;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 my %Mods = _make_mods();
 
@@ -39,7 +39,7 @@ LWP-UserAgent-ProxyHopper-0.002 LWP-UserAgent-ProxyHopper-Base-0.001    Net-OBEX
 
     for ( @mods ) {
         s/[\d.-]+$//;
-        my @name_chars = /[A-Z]+/g;
+        my @name_chars = /[[::upper::]]+/g;
         s/-/::/g;
 
         my $name = join '', @name_chars;
@@ -104,10 +104,10 @@ The items to "import" are named in "capitals only" fashion, in other words
 if ..*glances and chooses the longest name*..
 C<POE::Component::IRC::Plugin::YouTube::MovieFindStore> then you would
 use the module as
-C<use Acme::Shorten::ZoffixsModuleNames 'POECIPYTMFS';>
+C<use Acme::Shorten::ZoffixsModuleNames 'POECIRCPYTMFS';>
 (example in SYNOPSIS uses L<Acme::BabyEater> and L<CPAN::LinksToDocs>
 modules) then the
-class methods can be called as C<< $plug = POECIPYTMFS->new >> GREAT!!
+class methods can be called as C<< $plug = POECIRCPYTMFS->new >> GREAT!!
 Now that's so short and super awesome!! ZOMFG! A DREAM COMETH TRUE!
 
 Some module names clash, so if this module detects a clash it will append
