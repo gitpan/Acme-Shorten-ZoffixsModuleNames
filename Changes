@@ -1,5 +1,11 @@
 Revision history for Acme-Shorten-ZoffixsModuleNames
 
+0.003   Mar 24, 2008
+        fixed stupid error and updated module list
+
+0.002   Mar 23, 2008
+        fixed error in the docs
+
 0.001   Mar 21, 2008
         First version, released on an unsuspecting world.
 

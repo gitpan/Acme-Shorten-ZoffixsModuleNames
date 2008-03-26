@@ -3,7 +3,7 @@ package Acme::Shorten::ZoffixsModuleNames;
 use warnings;
 use strict;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 my %Mods = _make_mods();
 
@@ -26,20 +26,16 @@ sub _make_mods {
     # this is just a copy/paste from http://search.cpan.org/~zoffix/
 
     my @mods = qw(
-Acme-BabyEater-0.04
-CPAN-LinksToDocs-0.001
-CPAN-LinksToDocs-No404s-0.003
-CPAN-LinksToDocs-No404s-Remember-0.002
-Data-CPAN-DSLIP-Explain-0.0
-Devel-TakeHashArgs-0.002
-LWP-UserAgent-ProxyHopper-0.002 LWP-UserAgent-ProxyHopper-Base-0.001    Net-OBEX-0.004  Net-OBEX-FTP-0.001  Net-OBEX-Packet-Headers-0.002   Net-OBEX-Packet-Request-0.003   Net-OBEX-Response-0.002 POE-Component-Archive-Any-0.001 POE-Component-CPAN-LinksToDocs-No404s-0.001 POE-Component-CPAN-SQLite-Info-0.07 POE-Component-IRC-Plugin-BasePoCoWrap-0.002 POE-Component-IRC-Plugin-BaseWrap-0.001 POE-Component-IRC-Plugin-BrowserSupport-0.002   POE-Component-IRC-Plugin-CPAN-Info-0.03 POE-Component-IRC-Plugin-CPAN-LinksToDocs-0.001 POE-Component-IRC-Plugin-CPAN-LinksToDocs-No404s-0.002  POE-Component-IRC-Plugin-Google-Calculator-0.03 POE-Component-IRC-Plugin-Google-PageRank-0.01   POE-Component-IRC-Plugin-HTML-ElementInfo-0.001 POE-Component-IRC-Plugin-PAUSE-RecentUploads-0.04   POE-Component-IRC-Plugin-Thanks-0.02    POE-Component-IRC-Plugin-Unicode-UCD-0.001  POE-Component-IRC-Plugin-Validator-CSS-0.02 POE-Component-IRC-Plugin-Validator-HTML-0.002   POE-Component-IRC-Plugin-WWW-XKCD-AsText-0.002  POE-Component-IRC-Plugin-YouAreDoingItWrong-0.02    POE-Component-IRC-Plugin-YouTube-MovieFindStore-0.02    POE-Component-WebService-Validator-CSS-W3C-0.02 POE-Component-WebService-Validator-HTML-W3C-0.07    POE-Component-WWW-DoingItWrongCom-RandImage-0.02    POE-Component-WWW-Google-Calculator-0.02    POE-Component-WWW-Google-PageRank-0.03  POE-Component-WWW-PastebinCa-Retrieve-0.003 POE-Component-WWW-PastebinCom-Retrieve-0.002    POE-Component-WWW-PAUSE-RecentUploads-0.06  POE-Component-WWW-PAUSE-RecentUploads-Tail-0.05 POE-Component-WWW-Rafb-Create-0.001 POE-Component-WWW-Search-Mininova-0.04  POE-Component-WWW-WebDevout-BrowserSupportInfo-0.01 POE-Component-WWW-XKCD-AsText-0.001 POE-Component-WWW-YouTube-VideoURI-0.06 Win32-GUITaskAutomate-0.05  WWW-DoingItWrongCom-RandImage-0.01  WWW-FreeProxyListsCom-0.002 WWW-ImagebinCa-Create-0.02  WWW-ImagebinCa-Retrieve-0.01    WWW-OhNoRobotCom-Search-0.001   WWW-Pastebin-Base-Retrieve-0.001    WWW-Pastebin-CSSStandardsOrg-Retrieve-0.001 WWW-Pastebin-PastebinCa-Retrieve-0.001  WWW-PastebinCa-Create-0.001 WWW-PastebinCa-Retrieve-0.002   WWW-PastebinCom-Create-0.001    WWW-PastebinCom-Retrieve-0.002  WWW-PasteCSSStandardsOrg-Create-0.002   WWW-PAUSE-CleanUpHomeDir-0.001  WWW-PAUSE-RecentUploads-0.03    WWW-PhpfiCom-Create-0.001   WWW-PhpfiCom-Retrieve-0.002 WWW-Proxy4FreeCom-0.001 WWW-ProxyChecker-0.002  WWW-Rafb-Create-0.001   WWW-Rafb-Retrieve-0.001 WWW-Search-Mininova-0.05    WWW-WebDevout-BrowserSupportInfo-0.01   WWW-XKCD-AsText-0.001   XML-OBEXFTP-FolderListing-0.002
+Acme-BabyEater-0.04 Acme-Shorten-ZoffixsModuleNames-0.002   App-PNGCrush-0.001  CPAN-LinksToDocs-0.001  CPAN-LinksToDocs-No404s-0.003   CPAN-LinksToDocs-No404s-Remember-0.002  cpan_bot-0.07   Data-CPAN-DSLIP-Explain-0.03    Devel-TakeHashArgs-0.003    list_versions-0.04  LWP-UserAgent-ProxyHopper-0.002 LWP-UserAgent-ProxyHopper-Base-0.001    Net-OBEX-0.004  Net-OBEX-FTP-0.001  Net-OBEX-Packet-Headers-0.002   Net-OBEX-Packet-Request-0.003   Net-OBEX-Response-0.002 POE-Component-Archive-Any-0.001 POE-Component-CPAN-LinksToDocs-No404s-0.001 POE-Component-CPAN-LinksToDocs-No404s-Remember-0.001    POE-Component-CPAN-SQLite-Info-0.07 POE-Component-IRC-Plugin-BasePoCoWrap-0.002 POE-Component-IRC-Plugin-BaseWrap-0.001 POE-Component-IRC-Plugin-BrowserSupport-0.002   POE-Component-IRC-Plugin-CPAN-Info-0.03 POE-Component-IRC-Plugin-CPAN-LinksToDocs-0.001 POE-Component-IRC-Plugin-CPAN-LinksToDocs-No404s-0.002  POE-Component-IRC-Plugin-CPAN-LinksToDocs-No404s-Remember-0.001 POE-Component-IRC-Plugin-Google-Calculator-0.03 POE-Component-IRC-Plugin-Google-PageRank-0.01   POE-Component-IRC-Plugin-HTML-ElementInfo-0.001 POE-Component-IRC-Plugin-PAUSE-RecentUploads-0.04   POE-Component-IRC-Plugin-Thanks-0.02    POE-Component-IRC-Plugin-Unicode-UCD-0.001  POE-Component-IRC-Plugin-Validator-CSS-0.02 POE-Component-IRC-Plugin-Validator-HTML-0.002   POE-Component-IRC-Plugin-WWW-OhNoRobotCom-Search-0.001  POE-Component-IRC-Plugin-WWW-XKCD-AsText-0.002  POE-Component-IRC-Plugin-YouAreDoingItWrong-0.02    POE-Component-IRC-Plugin-YouTube-MovieFindStore-0.02    POE-Component-NonBlockingWrapper-Base-0.001 POE-Component-WebService-HtmlKitCom-FavIconFromImage-0.001  POE-Component-WebService-Validator-CSS-W3C-0.02 POE-Component-WebService-Validator-HTML-W3C-0.07    POE-Component-WWW-DoingItWrongCom-RandImage-0.02    POE-Component-WWW-Google-Calculator-0.02    POE-Component-WWW-Google-PageRank-0.03  POE-Component-WWW-OhNoRobotCom-Search-0.001 POE-Component-WWW-PAUSE-RecentUploads-0.06  POE-Component-WWW-PAUSE-RecentUploads-Tail-0.05 POE-Component-WWW-Search-Mininova-0.04  POE-Component-WWW-WebDevout-BrowserSupportInfo-0.01 POE-Component-WWW-XKCD-AsText-0.001 POE-Component-WWW-YouTube-VideoURI-0.06 WebService-HtmlKitCom-FavIconFromImage-0.001    Win32-GUITaskAutomate-0.05  WWW-DoingItWrongCom-RandImage-0.01  WWW-FreeProxyListsCom-0.002 WWW-ImagebinCa-Create-0.02  WWW-ImagebinCa-Retrieve-0.01    WWW-OhNoRobotCom-Search-0.001   WWW-Pastebin-Base-Retrieve-0.001    WWW-Pastebin-CSSStandardsOrg-Create-0.001   WWW-Pastebin-CSSStandardsOrg-Retrieve-0.001 WWW-Pastebin-NoMorePastingCom-Retrieve-0.001    WWW-Pastebin-PastebinCa-Create-0.001    WWW-Pastebin-PastebinCa-Retrieve-0.001  WWW-Pastebin-PastebinCom-Create-0.001   WWW-Pastebin-PastebinCom-Retrieve-0.002 WWW-Pastebin-PhpfiCom-Create-0.001  WWW-Pastebin-PhpfiCom-Retrieve-0.001    WWW-Pastebin-RafbNet-Create-0.001   WWW-Pastebin-RafbNet-Retrieve-0.001 WWW-Pastebin-UbuntuNlOrg-Retrieve-0.001 WWW-PAUSE-CleanUpHomeDir-0.001  WWW-PAUSE-RecentUploads-0.03    WWW-Proxy4FreeCom-0.001 WWW-ProxyChecker-0.002  WWW-Search-Mininova-0.05    WWW-WebDevout-BrowserSupportInfo-0.01   WWW-XKCD-AsText-0.001   XML-OBEXFTP-FolderListing-0.002
 );
+
+
 
     my %mods;
 
     for ( @mods ) {
         s/[\d.-]+$//;
-        my @name_chars = /[[::upper::]]+/g;
+        my @name_chars = /[[:upper:]]+/g;
         s/-/::/g;
 
         my $name = join '', @name_chars;

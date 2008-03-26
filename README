@@ -1,5 +1,19 @@
 Acme-Shorten-ZoffixsModuleNames
 
+This module allows you to use Zoffix Znet's modules
+( L<http://search.cpan.org/~zoffix> ) without those "super long names".
+
+Now finally all those people who keep mocking me everyday can live happily
+ever after and I can keep my module names descriptive, search-friendly
+and LONG!
+
+Here is the "joke" that triggered creation of this module...
+just for historical records :)
+
+    * CPAN2 upload: WWW-Pastebin-NoMorePastingCom-Retrieve-0.001 by ZOFFIX
+    <apeiron> WWW::Shorten::ZoffixsModuleNames
+    <iank> bahaha
+
 INSTALLATION
 
 To install this module, run the following commands:
